@@ -1,0 +1,50 @@
+.img-slide {
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 500px;
+}
+
+.subline {
+    width: 30%;
+    border: 1px #fff solid;
+    height: 1px;
+    margin: auto;
+}
+
+.carousel-caption img {
+    width: 2rem;
+}
+
+.title-slide {
+    font: 50px / 49px 'ACaslonProRegular', 'Times New Roman', Times, serif;
+}
+
+.description-slide {
+    font: 28px/33px 'ACaslonProItalic', 'Times New Roman', Times, serif;
+}
+
+.powered-by {
+    display: none !important;
+}
+
+
+@media (max-width: 768px) {
+    .img-slide {
+        height: 500px;
+    }
+    .title-slide {
+        font: 20px / 30px 'ACaslonProRegular', 'Times New Roman', Times, serif;
+    }
+
+    .description-slide {
+        font: 18px/30px 'ACaslonProItalic', 'Times New Roman', Times, serif;
+    }
+
+    .subline {
+        width: 40%;
+    }
+
+    .carousel-caption img {
+        width: 1.2rem;
+    }
+}
