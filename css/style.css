@@ -1,3 +1,7 @@
+.font-jm {
+    font-family: 'ACaslonProRegular', 'Times New Roman', Times, serif;
+}
+
 .img-slide {
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -19,6 +23,10 @@
     font: 50px / 49px 'ACaslonProRegular', 'Times New Roman', Times, serif;
 }
 
+.text-banner {
+    font: 20px / 30px 'ACaslonProRegular', 'Times New Roman', Times, serif;
+}
+
 .description-slide {
     font: 28px/33px 'ACaslonProItalic', 'Times New Roman', Times, serif;
 }
@@ -27,6 +35,16 @@
     display: none !important;
 }
 
+.sello-trebol {
+    background-color: #0d3915e8;
+    background-image: url('../img/trebol.png');
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 25px;
+    border-top: 3px #fff solid;
+}
 
 @media (max-width: 768px) {
     .img-slide {

@@ -1,3 +1,6 @@
+<?php
+  clearstatcache();
+?>
 <header>
     <?php include_once 'chatbot.php'; ?>
       <div style="background-color: black;">

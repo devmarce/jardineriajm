@@ -1,7 +1,4 @@
 <?php include_once 'functions.php'; ?>
-<?php
-header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
-?>
 
 <!doctype html>
 <html lang="es-AR">
