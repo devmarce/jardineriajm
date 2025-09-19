@@ -7,4 +7,5 @@
             <p style="color: #1efa079e;text-align: center;">&copy; JARDINERIA JM - <?php echo date('Y') ?> &#127808;</p>
         </div>
       </div>
+      <?php include "./componentes/formulario-contacto.php"; ?>
 </footer>

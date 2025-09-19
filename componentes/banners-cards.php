@@ -1,6 +1,7 @@
 <?php
 $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebol.png); height: 35px; background-repeat: no-repeat; background-position-x: center; background-position-y: bottom; background-size: 25px; border-top: 3px #fff solid;"';
 ?>
+
 <style type="text/css">
     .width-banner {
         width: 18rem;
@@ -29,8 +30,9 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
         .width-banner {
             width: 14rem;
         }
+
         .card-back {
-        min-height: 18rem;
+            min-height: 18rem;
         }
     }
 </style>
@@ -79,6 +81,12 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
                 <p class="txt-center">
                     Mis servicios incluyen la poda de césped para mantenerlo saludable y exuberante, la limpieza de terrenos para eliminar malas hierbas y escombros, así como la limpieza de patios y veredas. Con mi experiencia y dedicación, tu jardín estará en su mejor estado, listo para que disfrutes de momentos especiales al aire libre.
                 </p>
+                                        <!-- Button trigger modal -->
+                        <div style="margin-left: 5rem;">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="#12a004">
+                                Consultar
+                            </button>
+                        </div>
             </div>
         </div>
     </div>
@@ -139,6 +147,12 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
                             <li>Asesoramiento post-colocación.</li>
                         </ul>
                         </p>
+                        <!-- Button trigger modal -->
+                        <div style="margin-left: 5rem;">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="#12a004">
+                                Consultar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

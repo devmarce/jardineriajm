@@ -1,4 +1,6 @@
 <?php
+define("SITIO", "tester");
+
 function whatsapp($num)
 {
     /*mobile*/
