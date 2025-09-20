@@ -1,7 +1,23 @@
 <?php
 $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebol.png); height: 35px; background-repeat: no-repeat; background-position-x: center; background-position-y: bottom; background-size: 25px; border-top: 3px #fff solid;"';
-?>
 
+function render_consulta_button($reason)
+{
+    echo '
+        <div style="margin-left: 5rem;">
+            <button type="button" 
+            class="btn btn-primary" 
+            data-bs-toggle="modal" 
+            data-bs-target="#exampleModal" 
+            data-consulta="' . $reason . '" 
+            style="background: #12a004">
+                Consultar
+            </button>
+        </div>
+    ';
+}
+
+?>
 <style type="text/css">
     .width-banner {
         width: 18rem;
@@ -61,6 +77,8 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
                     <li>Calidad de terminación.</li>
                     <li>Asesoramiento post-colocación.</li>
                 </ul>
+                <!-- Button trigger modal -->
+                <?php render_consulta_button("Instación de Césped"); ?>
             </div>
         </div>
     </div>
@@ -72,7 +90,7 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
     </div>
     <div class="container mt-1">
         <div class="card" style="border: 2px solid;">
-            <img src="./img/family-casa-jm.jpg" class="card-img-top" alt="...">
+            <img src="./img/casa-jm.jpg" class="card-img-top" alt="...">
             <div class="sello-trebol"></div>
             <div class="card-body card-back">
                 <p class="card-text txt-center">
@@ -81,18 +99,14 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
                 <p class="txt-center">
                     Mis servicios incluyen la poda de césped para mantenerlo saludable y exuberante, la limpieza de terrenos para eliminar malas hierbas y escombros, así como la limpieza de patios y veredas. Con mi experiencia y dedicación, tu jardín estará en su mejor estado, listo para que disfrutes de momentos especiales al aire libre.
                 </p>
-                                        <!-- Button trigger modal -->
-                        <div style="margin-left: 5rem;">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="#12a004">
-                                Consultar
-                            </button>
-                        </div>
+                <!-- Button trigger modal -->
+                <?php render_consulta_button("Corte de Césped, Poda y Tala"); ?>
             </div>
         </div>
     </div>
 
     <div class="mt-5 pt-2 pb-2 mb-1" style="width: 90%; margin-left: 5%; text-align: center; background-color: #0d3915e8; border-radius: 6px;">
-        <h2 class="title-slide" style="color: #ffff;">Mantenimiento y Limpieza de Jardines</h2>
+        <h2 class="title-slide" style="color: #ffff;">Riego, mantenimiento y Limpieza de Jardines</h2>
         <div class="subline my-1"></div>
         <p class="my-0" style="color: #ffff;">JM</p>
     </div>
@@ -112,6 +126,8 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
                     <li>Quita de scombros, leñas y basura</li>
                 </ul>
                 </p>
+                <!-- Button trigger modal -->
+                <?php render_consulta_button("Riego, mantenimineto y limpieza"); ?>
             </div>
         </div>
     </div>
@@ -148,11 +164,7 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
                         </ul>
                         </p>
                         <!-- Button trigger modal -->
-                        <div style="margin-left: 5rem;">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="#12a004">
-                                Consultar
-                            </button>
-                        </div>
+                        <?php render_consulta_button("Instación de Césped"); ?>
                     </div>
                 </div>
             </div>
@@ -160,7 +172,7 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
         <div class="col-4">
             <div class="mt-2 mb-2">
                 <div class="card container p-0 width-banner">
-                    <img src="./img/family-casa-jm.jpg" class="card-img-top" alt="...">
+                    <img src="./img/casa-jm.jpg" class="card-img-top" alt="...">
                     <div class="text-center" style="background-color: #0d3915e8;">
                         <div style="border: 2px #fff solid;"></div>
                         <img src="./img/trebol.png" style="height: 1rem;">
@@ -176,6 +188,8 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
                         <p>
                             Mis servicios incluyen la poda de césped para mantenerlo saludable y exuberante, la limpieza de terrenos para eliminar malas hierbas y escombros, así como la limpieza de patios y veredas. Con mi experiencia y dedicación, tu jardín estará en su mejor estado, listo para que disfrutes de momentos especiales al aire libre.
                         </p>
+                        <!-- Button trigger modal -->
+                        <?php render_consulta_button("Corte de Césped, Poda y Tala"); ?>
                     </div>
                 </div>
             </div>
@@ -204,6 +218,8 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
                             <li>Quita de scombros, leñas y basura</li>
                         </ul>
                         </p>
+                        <!-- Button trigger modal -->
+                        <?php render_consulta_button("Riego, mantenimineto y limpieza"); ?>
                     </div>
                 </div>
             </div>
@@ -211,4 +227,4 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
 
     </div>
 </div>
-<!-- end: banners-jm desktop -- >
+<!-- end: banners-jm desktop -->
