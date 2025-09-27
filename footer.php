@@ -5,42 +5,45 @@
         </div>
         <div class="p-1" style="width: 90%; margin-top: 6px;">
             <p style="color: #1efa079e;text-align: center;">&copy; JARDINERIA JM - <?php echo date('Y') ?> &#127808;</p>
+            <p class="mb-2" style="color: #fff;text-align: center;font-size: 0.8rem;">creado por
+                <a href="https://landingweb.com.ar/" target="_blank" style="text-decoration: none;">Landing Web <img src="./img/logosvg/logo-negro.jpg" style="width: 20px;"></a>
+            </p>
         </div>
-      </div>
-      <?php include "./componentes/formulario-contacto.php"; ?>
+    </div>
+    <?php include "./componentes/formulario-contacto.php"; ?>
     <script>
-    // Esperar a que el DOM cargue
-    document.addEventListener("DOMContentLoaded", function () {
-    // Seleccionamos todos los botones que abren el modal
-    const botones = document.querySelectorAll("[data-bs-toggle='modal'][data-consulta]");
-    const modal = document.getElementById("exampleModal");
+        // Esperar a que el DOM cargue
+        document.addEventListener("DOMContentLoaded", function() {
+            // Seleccionamos todos los botones que abren el modal
+            const botones = document.querySelectorAll("[data-bs-toggle='modal'][data-consulta]");
+            const modal = document.getElementById("exampleModal");
 
-    // Escuchar el evento cuando se abre el modal
-    modal.addEventListener("show.bs.modal", function (event) {
-        // El botón que disparó el modal
-        const boton = event.relatedTarget;
-        const consulta = boton.getAttribute("data-consulta");
+            // Escuchar el evento cuando se abre el modal
+            modal.addEventListener("show.bs.modal", function(event) {
+                // El botón que disparó el modal
+                const boton = event.relatedTarget;
+                const consulta = boton.getAttribute("data-consulta");
 
-        // Buscar si ya existe el input hidden
-        let hiddenInput = modal.querySelector("input[name='consulta']");
+                // Buscar si ya existe el input hidden
+                let hiddenInput = modal.querySelector("input[name='consulta']");
 
-        if (!hiddenInput) {
-        // Crear el input hidden si no existe
-        hiddenInput = document.createElement("input");
-        hiddenInput.type = "hidden";
-        hiddenInput.name = "consulta";
-        
-        motivoModal = document.createElement("p");
-        motivoModal.textContent = consulta;
+                if (!hiddenInput) {
+                    // Crear el input hidden si no existe
+                    hiddenInput = document.createElement("input");
+                    hiddenInput.type = "hidden";
+                    hiddenInput.name = "consulta";
 
-        // Insertarlo dentro del formulario
-        const form = modal.querySelector("form");
-        form.appendChild(hiddenInput);
-        }
+                    motivoModal = document.createElement("p");
+                    motivoModal.textContent = consulta;
 
-        // Asignar el valor desde el data-consulta del botón
-        hiddenInput.value = consulta;
-    });
-    });
+                    // Insertarlo dentro del formulario
+                    const form = modal.querySelector("form");
+                    form.appendChild(hiddenInput);
+                }
+
+                // Asignar el valor desde el data-consulta del botón
+                hiddenInput.value = consulta;
+            });
+        });
     </script>
 </footer>
