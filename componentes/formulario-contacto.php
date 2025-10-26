@@ -35,9 +35,14 @@
               id="telefono"
               name="telefono"
               placeholder="1523232323"
-              required>
-            <div class="invalid-feedback">Por favor, ingresá un número de teléfono válido.</div>
+              required
+              minlength="10"
+              maxlength="13"
+              pattern="^\d{10,13}$"
+              title="El número debe tener entre 10 y 13 dígitos numéricos.">
+            <div class="invalid-feedback">Por favor, ingresá un número de teléfono válido (10 a 13 dígitos).</div>
           </div>
+
 
           <div class="mb-3">
             <label for="email" class="form-label text-white">Email (opcional)</label>
@@ -92,9 +97,11 @@
     border: 1px solid #fff;
     color: #fff;
   }
+
   .campo-verde::placeholder {
     color: #ddd;
   }
+
   .campo-verde:focus {
     background-color: rgba(255, 255, 255, 0.2);
     border-color: #a5d6a7;
@@ -109,6 +116,7 @@
     color: #fff;
     font-weight: bold;
   }
+
   .btn-verde:hover {
     background-color: #2e7d32;
     color: #fff;
@@ -118,4 +126,29 @@
   .btn-close-white {
     filter: invert(1);
   }
+  .was-validated .form-control:invalid {
+    border-color: #ff6b6b !important;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.6);
+  }
 </style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("#exampleModal form");
+
+  form.addEventListener("submit", function (e) {
+    // Evita que se envíe por defecto
+    e.preventDefault();
+
+    // Verifica si el formulario es válido
+    if (!form.checkValidity()) {
+      e.stopPropagation(); // Evita el envío
+      form.classList.add("was-validated"); // Activa mensajes de Bootstrap
+      return;
+    }
+
+    // Si todo está bien, se envía
+    form.submit();
+  });
+});
+</script>
