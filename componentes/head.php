@@ -16,7 +16,8 @@
   <meta property="og:title" content="JARDINERIA JM - TABAJOS DE JARDINERIA">
   <meta property="og:description" content="Hacemos Jardineria en general, colocación de cesped, poda y tala de árboles, mantenimiento de jardines">
   <meta property="og:url" content="https://jardineriajm.com.ar/">
-  <meta property="og:image" content="./img/logosvg/logo-jm.png">
+  <meta property="og:image" content="https://jardineriajm.com.ar/img/logosvg/trebol.svg">
+  <meta property="og:image:secure_url" content="https://jardineriajm.com.ar/img/logosvg/trebol.svg">
   <meta property="og:site_name" content="JARDINERIA JM">
 
   <!-- Boostrap scripts -->
