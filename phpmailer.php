@@ -23,7 +23,7 @@ if (!isset($_POST["nombre"]) || empty($_POST["nombre"]) || !isset($_POST["telefo
 $nombre      = $_POST["nombre"];
 $mensaje     = $_POST["mensaje"];
 $telefono    = $_POST["telefono"];
-$email       = $_POST["email"];
+$email = !empty($_POST["email"]) ? $_POST["email"] : "No agregó casilla de mail";
 $consulta    = $_POST["consulta"];
 
 if (isset($email) && !empty($email)) {
