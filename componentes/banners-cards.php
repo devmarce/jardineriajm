@@ -56,7 +56,7 @@ function render_consulta_button($reason)
 <!-- ini: banners-jm mobile -->
 <div class="d-sm-block d-md-none pt-5" style="background-image: url('./img/cesped-jm.jpg'); background-repeat: no-repeat; background-size: cover;">
     <div class="pt-2 pb-2 mb-1" style="width: 90%; margin-left: 5%; text-align: center; background-color: #0d3915e8; border-radius: 6px;">
-        <h2 class="title-slide" style="color: #ffff;"><strong>Instación</strong> de Césped</h2>
+        <h2 class="title-slide" style="color: #ffff;"><strong>Instalación</strong> de Césped</h2>
         <div class="subline my-1"></div>
         <p class="my-0" style="color: #ffff;">JM</p>
     </div>
@@ -78,7 +78,7 @@ function render_consulta_button($reason)
                     <li>Asesoramiento post-colocación.</li>
                 </ul>
                 <!-- Button trigger modal -->
-                <?php render_consulta_button("Instación de Césped"); ?>
+                <?php render_consulta_button("Instalación de Césped"); ?>
             </div>
         </div>
     </div>
@@ -127,7 +127,7 @@ function render_consulta_button($reason)
                 </ul>
                 </p>
                 <!-- Button trigger modal -->
-                <?php render_consulta_button("Riego, mantenimineto y limpieza"); ?>
+                <?php render_consulta_button("Riego, mantenimiento y limpieza"); ?>
             </div>
         </div>
     </div>
@@ -147,7 +147,7 @@ function render_consulta_button($reason)
                         <p style="color: #fff; margin: 0px;">JM</p>
                     </div>
                     <div class="card-body card-back">
-                        <h5 class="text-banner text-center my-2"><strong>Instación</strong> de Césped</h5>
+                        <h5 class="text-banner text-center my-2"><strong>Instalación</strong> de Césped</h5>
                         <div class="subline my-2"></div>
                         <p>&#127808;</p>
                         <p class="card-text my-3">
@@ -164,7 +164,7 @@ function render_consulta_button($reason)
                         </ul>
                         </p>
                         <!-- Button trigger modal -->
-                        <?php render_consulta_button("Instación de Césped"); ?>
+                        <?php render_consulta_button("Instalación de Césped"); ?>
                     </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@ function render_consulta_button($reason)
                         <p style="color: #fff; margin: 0px;">JM</p>
                     </div>
                     <div class="card-body card-back">
-                        <h5 class="text-banner text-center my-2"><strong>Riego</strong> mantenimineto y limpieza.</h5>
+                        <h5 class="text-banner text-center my-2"><strong>Riego</strong> mantenimiento y limpieza.</h5>
                         <div class="subline my-2"></div>
                         <p>&#127808;</p>
                         <p class="card-text my-3">
@@ -219,7 +219,7 @@ function render_consulta_button($reason)
                         </ul>
                         </p>
                         <!-- Button trigger modal -->
-                        <?php render_consulta_button("Riego, mantenimineto y limpieza"); ?>
+                        <?php render_consulta_button("Riego, mantenimiento y limpieza"); ?>
                     </div>
                 </div>
             </div>
