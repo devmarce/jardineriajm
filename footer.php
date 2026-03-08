@@ -1,12 +1,12 @@
 <footer>
-    <div style="background-color: black; display: flex;">
+    <div style="background-color: rgba(10, 15, 12, 0.95); display: flex; border-top: 2px solid var(--primary-color);">
         <div class="p-1">
             <img src="./img/logosvg/trebol.svg" alt="" style="width: 100px;">
         </div>
         <div class="p-1" style="width: 90%; margin-top: 6px;">
             <p style="color: #1efa079e;text-align: center;">&copy; JARDINERIA JM - <?php echo date('Y') ?> &#127808;</p>
-            <p class="mb-2" style="color: #fff;text-align: center;font-size: 0.8rem;">creado por
-                <a href="https://landingweb.com.ar/" target="_blank" style="text-decoration: none;">Landing Web <img src="./img/logosvg/logo-negro.jpg" style="width: 20px;"></a>
+            <p class="mb-2" style="color: #e2e8f0;text-align: center;font-size: 0.85rem;">creado por
+                <a href="https://landingweb.com.ar/" target="_blank" style="text-decoration: none; color: var(--accent-color);">Landing Web <img src="./img/logosvg/logo-negro.jpg" style="width: 20px; border-radius: 4px;"></a>
             </p>
         </div>
     </div>

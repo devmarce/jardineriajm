@@ -4,13 +4,12 @@ $style = ' style="background-color: #0d3915e8; background-image: url(./img/trebo
 function render_consulta_button($reason)
 {
     echo '
-        <div style="margin-left: 5rem;">
+        <div class="text-center mt-3">
             <button type="button" 
-            class="btn btn-primary" 
+            class="btn btn-premium" 
             data-bs-toggle="modal" 
             data-bs-target="#exampleModal" 
-            data-consulta="' . $reason . '" 
-            style="background: #12a004">
+            data-consulta="' . $reason . '">
                 Consultar
             </button>
         </div>
@@ -18,40 +17,7 @@ function render_consulta_button($reason)
 }
 
 ?>
-<style type="text/css">
-    .width-banner {
-        width: 18rem;
-        border: 2px solid;
-    }
 
-    .width-banner p {
-        text-align: center;
-    }
-
-    .card-back {
-        background-color: #0d3915e8;
-        color: #fff !important;
-        min-height: 30rem;
-    }
-
-    .txt-center {
-        text-align: center;
-    }
-
-    .card-img-top {
-        height: 17rem;
-    }
-
-    @media (max-width: 768px) {
-        .width-banner {
-            width: 14rem;
-        }
-
-        .card-back {
-            min-height: 18rem;
-        }
-    }
-</style>
 
 <!-- ini: banners-jm mobile -->
 <div class="d-sm-block d-md-none pt-5" style="background-image: url('./img/cesped-jm.jpg'); background-repeat: no-repeat; background-size: cover;">
@@ -61,7 +27,7 @@ function render_consulta_button($reason)
         <p class="my-0" style="color: #ffff;">JM</p>
     </div>
     <div class="container mt-1">
-        <div class="card" style="border: 2px solid;">
+        <div class="card premium-card">
             <img src="./img/cesped2-jm.jpg" class="card-img-top" alt="...">
             <div class="sello-trebol"></div>
             <div class="card-body card-back">
@@ -89,7 +55,7 @@ function render_consulta_button($reason)
         <p class="my-0" style="color: #ffff;">JM</p>
     </div>
     <div class="container mt-1">
-        <div class="card" style="border: 2px solid;">
+        <div class="card premium-card">
             <img src="./img/casa-jm.jpg" class="card-img-top" alt="...">
             <div class="sello-trebol"></div>
             <div class="card-body card-back">
@@ -111,7 +77,7 @@ function render_consulta_button($reason)
         <p class="my-0" style="color: #ffff;">JM</p>
     </div>
     <div class="container mt-1 pb-5">
-        <div class="card" style="border: 2px solid;">
+        <div class="card premium-card">
             <img src="./img/riego_1.jpg" class="card-img-top" alt="...">
             <div class="sello-trebol"></div>
             <div class="card-body card-back">
@@ -139,7 +105,7 @@ function render_consulta_button($reason)
     <div class="row">
         <div class="col-4">
             <div class="mt-2 mb-2">
-                <div class="card container p-0 width-banner">
+                <div class="card container p-0 premium-card">
                     <img src="./img/cesped2-jm.jpg" class="card-img-top" alt="...">
                     <div class="text-center" style="background-color: #0d3915e8;">
                         <div style="border: 2px #fff solid;"></div>
@@ -171,7 +137,7 @@ function render_consulta_button($reason)
         </div>
         <div class="col-4">
             <div class="mt-2 mb-2">
-                <div class="card container p-0 width-banner">
+                <div class="card container p-0 premium-card">
                     <img src="./img/casa-jm.jpg" class="card-img-top" alt="...">
                     <div class="text-center" style="background-color: #0d3915e8;">
                         <div style="border: 2px #fff solid;"></div>
@@ -196,7 +162,7 @@ function render_consulta_button($reason)
         </div>
         <div class="col-4">
             <div class="mt-2 mb-2">
-                <div class="card container p-0 width-banner">
+                <div class="card container p-0 premium-card">
                     <img src="./img/riego_1.jpg" class="card-img-top" alt="...">
                     <div class="text-center" style="background-color: #0d3915e8;">
                         <div style="border: 2px #fff solid;"></div>

@@ -11,7 +11,7 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="img-slide" style="background-image: url('./img/country-jm.png');">
-                <div class="carousel-caption" style="background-color: #12191d66;">
+                <div class="carousel-caption">
                     <h5 class="title-slide my-4">Jardineria para <strong>Countries</strong></h5>
                     <div class="subline my-2"></div>
                     <img src="./img/trebol.png">
@@ -24,7 +24,7 @@
         </div>
         <div class="carousel-item">
             <div class="img-slide" style="background-image: url('./img/cotingpasto.jpg');">
-                <div class="carousel-caption" style="background-color: #12191d66;">
+                <div class="carousel-caption">
                     <h5 class="title-slide my-4"><strong>Mantenimiento</strong> de Jardines o Terrenos</h5>
                     <div class="subline my-2"></div>
                     <img src="./img/trebol.png">
@@ -37,7 +37,7 @@
         </div>
         <div class="carousel-item">
             <div class="img-slide" style="background-image: url('./img/instalar_cesped.jpg');">
-                <div class="carousel-caption" style="background-color: #12191d66;">
+                <div class="carousel-caption">
                     <h5 class="title-slide my-4">Colocación de <strong>Césped Natural o Sintético</strong></h5>
                     <div class="subline my-2"></div>
                     <img src="./img/trebol.png">
