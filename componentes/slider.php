@@ -10,13 +10,15 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <div class="img-slide" style="background-image: url('./img/libustrina.jpg');">
+            <div class="img-slide" style="background-image: url('./img/country-jm.png');">
                 <div class="carousel-caption" style="background-color: #12191d66;">
-                    <h5 class="title-slide my-4">Sistema de <strong>Riego</strong></h5>
+                    <h5 class="title-slide my-4">Jardineria para <strong>Countries</strong></h5>
                     <div class="subline my-2"></div>
                     <img src="./img/trebol.png">
                     <p>JM</p>
-                    <p class="description-slide my-4">Diseñamos e instalamos los sistemas. Descubre el poder del riego eficiente con nuestros servicios especializados.</p>
+                    <p class="description-slide my-4">
+                        Mantenimiento, diseño y paisajismo para countries y barrios privados. Cuidamos cada detalle para que tu jardín refleje elegancia y armonía.
+                    </p>
                 </div>
             </div>
         </div>

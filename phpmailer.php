@@ -29,7 +29,7 @@ $consulta    = $_POST["consulta"];
 if (isset($email) && !empty($email)) {
   $mail_emisor = $email;
 } else {
-  $mail_emisor = "info@jardineriajm.com.ar";
+  $mail_emisor = "mareco.mam@gmail.com.ar";
 }
 
 /* ‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖ CUERPO DE MAIL ‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖‖ */
