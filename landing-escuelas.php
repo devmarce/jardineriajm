@@ -31,6 +31,17 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+  
+  /* Accordion Premium Styles */
+  .accordion-button:not(.collapsed) {
+    color: var(--primary-color) !important;
+    background-color: rgba(13, 57, 21, 0.05);
+    box-shadow: none;
+  }
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+  }
 </style>
 
 <body>
@@ -59,99 +70,131 @@
       </div>
     </div>
 
-    <!-- Features Section -->
-    <div class="container my-5 py-4">
-      <div class="row text-center mb-5">
-        <div class="col-12">
-            <h2 class="text-banner" style="font-size: 2.5rem;">¿Por qué elegir JM para su Institución?</h2>
+    <!-- Features Section - Banners & Accordion -->
+    <div class="container my-5">
+      
+      <!-- Banner 1 -->
+      <div class="row align-items-center mb-5 premium-card p-0 overflow-hidden" style="border-radius: 16px;">
+        <div class="col-md-6 p-0">
+          <img src="./img/escuela1.jpg" alt="Mantenimiento de grandes extensiones" class="img-fluid w-100" style="object-fit: cover; min-height: 350px;">
+        </div>
+        <div class="col-md-6 p-5">
+          <h3 class="text-banner" style="font-size: 2rem;color: yellow;">Entornos de aprendizaje <br><strong>Seguros</strong></h3>
+          <div class="subline my-3" style="width: 80px;"></div>
+          <p style="font-size: 1.1rem; color: #e8fc7f;">Sabemos que la seguridad de los alumnos es primordial. Nuestro servicio especializado en escuelas garantiza el retiro inmediato de ramas peligrosas, despeje de luminarias y un terreno libre de malezas para evitar accidentes durante los recreos y actividades deportivas.</p>
+          <button type="button" class="btn btn-premium mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-consulta="Landing Escuelas - Banner Seguridad">
+              Consultar Disponibilidad
+          </button>
+        </div>
+      </div>
+
+      <!-- Banner 2 -->
+      <div class="row align-items-center mb-5 premium-card p-0 overflow-hidden" style="border-radius: 16px; flex-direction: row-reverse;">
+        <div class="col-md-6 p-0">
+          <img src="./img/poda-jm.jpg" alt="Poda segura escolar" class="img-fluid w-100" style="object-fit: cover; min-height: 350px;">
+        </div>
+        <div class="col-md-6 p-5">
+          <h3 class="text-banner" style="font-size: 2rem;color: yellow;">Horarios <strong>Flexibles</strong> <br>para Instituciones</h3>
+          <div class="subline my-3" style="width: 80px;"></div>
+          <p style="font-size: 1.1rem; color: #e8fc7f;">Nuestros equipos de paisajistas y jardineros operan sin interrumpir el dictado de clases. Coordinamos visitas en contraturno, fines de semana o durante el ciclo de receso escolar de verano e invierno para mantener las instalaciones en estado impecable durante todo el año escolar.</p>
+          <button type="button" class="btn btn-premium mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-consulta="Landing Escuelas - Banner Horarios">
+              Agendar Visita
+          </button>
+        </div>
+      </div>
+
+      <!-- Accordion Services -->
+      <div class="row mt-5 pt-4">
+        <div class="col-12 text-center mb-4">
+            <h2 class="text-banner" style="font-size: 2.5rem;">Nuestros Servicios Especiales</h2>
             <div class="subline mx-auto" style="width: 100px;"></div>
         </div>
+
+        <div class="col-lg-10 mx-auto">
+          <div class="accordion premium-accordion" id="accordionServices">
+            
+            <!-- Item 1 -->
+            <div class="accordion-item mb-3" style="border: 1px solid rgba(13, 57, 21, 0.2); border-radius: 12px; overflow: hidden;">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed text-banner" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="font-size: 1.3rem; color: var(--primary-color);">
+                  <i class="me-3">&#127808;</i> Mantenimiento Integral de Campus
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionServices">
+                <div class="accordion-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                      <img src="./img/riego_1.jpg" alt="Césped verde" class="img-fluid rounded" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </div>
+                    <div class="col-md-8">
+                        <ul style="font-size: 1.1rem; color: #444;">
+                           <li class="mb-2">Corte de césped en campos deportivos perimetrales.</li>
+                           <li class="mb-2">Manejo y erradicación de malezas para terrenos seguros.</li>
+                           <li class="mb-2">Riego optimizado y cuidado de plantas ornamentales.</li>
+                        </ul>
+                        <button type="button" class="btn btn-premium mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-consulta="Landing Escuelas - Acordeon Integral">Contactar por Mantenimiento</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item mb-3" style="border: 1px solid rgba(13, 57, 21, 0.2); border-radius: 12px; overflow: hidden;">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed text-banner" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-size: 1.3rem; color: var(--primary-color);">
+                  <i class="me-3">&#127808;</i> Poda Segura y Prevención
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionServices">
+                <div class="accordion-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                      <img src="./img/mant-j1.jpg" alt="Poda segura" class="img-fluid rounded" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </div>
+                    <div class="col-md-8">
+                        <ul style="font-size: 1.1rem; color: #444;">
+                           <li class="mb-2">Poda de árboles de gran porte y ligustrinas fronterizas.</li>
+                           <li class="mb-2">Despeje de techos de pabellones y pasillos.</li>
+                           <li class="mb-2">Retiro inmediato de recortes en vehículos propios para mayor seguridad.</li>
+                        </ul>
+                        <button type="button" class="btn btn-premium mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-consulta="Landing Escuelas - Acordeon Poda">Contactar por Poda</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item mb-3" style="border: 1px solid rgba(13, 57, 21, 0.2); border-radius: 12px; overflow: hidden;">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed text-banner" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-size: 1.3rem; color: var(--primary-color);">
+                  <i class="me-3">&#127808;</i> Renovación y Diseño de Espacios
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionServices">
+                <div class="accordion-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                      <img src="./img/jardineria-j1.jpg" alt="Diseño de espacios" class="img-fluid rounded" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </div>
+                    <div class="col-md-8">
+                        <ul style="font-size: 1.1rem; color: #444;">
+                           <li class="mb-2">Instalación rápida de césped natural en panes durante recesos.</li>
+                           <li class="mb-2">Diseño y embellecimiento de canteros en zonas de acceso.</li>
+                           <li class="mb-2">Nivelación de tierra en áreas de recreación y deporte.</li>
+                        </ul>
+                        <button type="button" class="btn btn-premium mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-consulta="Landing Escuelas - Acordeon Renovacion">Contactar por Renovación</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-      
-      <div class="row align-items-stretch">
-        
-        <!-- Service 1 -->
-        <div class="col-md-4 mb-4">
-            <div class="card premium-card">
-                <img src="./img/riego_1.jpg" class="card-img-top" alt="Mantenimiento integral">
-                <div class="sello-trebol"></div>
-                <div class="card-body card-back text-center">
-                    <h5 class="text-banner my-2">Mantenimiento <strong>Integral</strong></h5>
-                    <div class="subline my-2"></div>
-                    <p class="text-start mt-3">
-                        <ul class="text-start">
-                           <li>Corte de césped en grandes extensiones.</li>
-                           <li>Manejo de malezas en patios y campos deportivos.</li>
-                           <li>Riego y cuidado de plantas ornamentales.</li>
-                           <li>Personal capacitado y maquinaria adecuada.</li>
-                        </ul>
-                    </p>
-                    <button type="button" 
-                        class="btn btn-premium mt-auto" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#exampleModal" 
-                        data-consulta="Landing Escuelas - Mantenimiento Integral">
-                            Consultar
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Service 2 -->
-        <div class="col-md-4 mb-4">
-            <div class="card premium-card">
-                <img src="./img/casa-jm.jpg" class="card-img-top" alt="Poda segura">
-                <div class="sello-trebol"></div>
-                <div class="card-body card-back text-center">
-                    <h5 class="text-banner my-2"><strong>Poda</strong> y Seguridad</h5>
-                    <div class="subline my-2"></div>
-                    <p class="text-start mt-3">
-                        <ul class="text-start">
-                           <li>Poda de árboles de gran porte y ligustrinas.</li>
-                           <li>Despeje de luminarias y techos.</li>
-                           <li>Extracción de ramas peligrosas preventivamente.</li>
-                           <li>Retiro inmediato de escombros y recortes.</li>
-                        </ul>
-                    </p>
-                    <button type="button" 
-                        class="btn btn-premium mt-auto" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#exampleModal" 
-                        data-consulta="Landing Escuelas - Poda y Prevecion">
-                            Consultar
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Service 3 -->
-        <div class="col-md-4 mb-4">
-            <div class="card premium-card">
-                <img src="./img/cesped2-jm.jpg" class="card-img-top" alt="Instalación de césped">
-                <div class="sello-trebol"></div>
-                <div class="card-body card-back text-center">
-                    <h5 class="text-banner my-2"><strong>Renovación</strong> de Espacios</h5>
-                    <div class="subline my-2"></div>
-                    <p class="text-start mt-3">
-                        <ul class="text-start">
-                           <li>Instalación de césped natural en panes (grama bahiana).</li>
-                           <li>Colocación de césped sintético para patios de juego.</li>
-                           <li>Diseño de canteros y jardines de acceso.</li>
-                           <li>Nivelación para áreas deportivas colegiales.</li>
-                        </ul>
-                    </p>
-                    <button type="button" 
-                        class="btn btn-premium mt-auto" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#exampleModal" 
-                        data-consulta="Landing Escuelas - Renovación de espacios">
-                            Consultar
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-      </div>
+
     </div>
     
   </div>
