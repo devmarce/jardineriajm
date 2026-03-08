@@ -25,6 +25,7 @@ $mensaje     = $_POST["mensaje"];
 $telefono    = $_POST["telefono"];
 $email = !empty($_POST["email"]) ? $_POST["email"] : "No agregó casilla de mail";
 $consulta    = $_POST["consulta"];
+$origen      = isset($_POST["origen_landing"]) ? $_POST["origen_landing"] : "Landing Principal";
 
 if (isset($email) && !empty($email)) {
   $mail_emisor = $email;
@@ -37,6 +38,7 @@ $cuerpo_mail_html = <<<HTML
   <div style="color: white;background: #0d3915e8;padding: 1rem;">
   <h1>Contacto desde la web Jardineria JM &#127808;</h1>
   <hr>
+  <p><b>ORIGEN:</b> $origen</p>
   <p><b>MOTIVO DE CONSULTA:</b> $consulta</p>
   <p><b>Prospecto:</b> $nombre</p>
   <p><b>Teléfono:</b> $telefono</p>
