@@ -20,6 +20,9 @@
     <!-- Promo Escuelas -->
     <?php include_once 'componentes/promo-escuelas.php'; ?>
 
+    <!-- Promo Instituciones de Salud -->
+    <?php include_once 'componentes/promo-instituciones.php'; ?>
+
   </div>
 
   <!-- footer.php -->

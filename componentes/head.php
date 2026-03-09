@@ -16,12 +16,17 @@
   <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#03e71f">
 
-  <?php
+    <?php
     $currentPage = basename($_SERVER['PHP_SELF']);
     if ($currentPage == 'landing-escuelas.php') {
         $og_title = "JARDINERIA JM - Mantenimiento para Escuelas e Instituciones";
         $og_desc = "Servicio especializado en jardinería, poda segura y mantenimiento de grandes extensiones verdes para colegios e instituciones educativas.";
         $og_url = "https://jardineriajm.com.ar/landing-escuelas.php";
+        $og_image = "https://jardineriajm.com.ar/img/logosvg/trebol.svg";
+    } elseif ($currentPage == 'landing-instituciones.php') {
+        $og_title = "JARDINERIA JM - Jardinería para Hospitales y Centros de Salud";
+        $og_desc = "Diseñamos y mantenemos espacios verdes silenciosos, higiénicos y terapéuticos para el bienestar físico y emocional de los pacientes.";
+        $og_url = "https://jardineriajm.com.ar/landing-instituciones.php";
         $og_image = "https://jardineriajm.com.ar/img/logosvg/trebol.svg";
     } else {
         $og_title = "JARDINERIA JM - TRABAJOS DE JARDINERIA";
