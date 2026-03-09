@@ -16,13 +16,27 @@
   <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#03e71f">
 
+  <?php
+    $currentPage = basename($_SERVER['PHP_SELF']);
+    if ($currentPage == 'landing-escuelas.php') {
+        $og_title = "JARDINERIA JM - Mantenimiento para Escuelas e Instituciones";
+        $og_desc = "Servicio especializado en jardinería, poda segura y mantenimiento de grandes extensiones verdes para colegios e instituciones educativas.";
+        $og_url = "https://jardineriajm.com.ar/landing-escuelas.php";
+        $og_image = "https://jardineriajm.com.ar/img/logosvg/trebol.svg";
+    } else {
+        $og_title = "JARDINERIA JM - TRABAJOS DE JARDINERIA";
+        $og_desc = "Hacemos Jardineria en general, colocación de cesped, poda y tala de árboles, mantenimiento de jardines";
+        $og_url = "https://jardineriajm.com.ar/";
+        $og_image = "https://jardineriajm.com.ar/img/logosvg/trebol.svg";
+    }
+  ?>
   <meta property="og:locale" content="es_AR">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="JARDINERIA JM - TABAJOS DE JARDINERIA">
-  <meta property="og:description" content="Hacemos Jardineria en general, colocación de cesped, poda y tala de árboles, mantenimiento de jardines">
-  <meta property="og:url" content="https://jardineriajm.com.ar/">
-  <meta property="og:image" content="https://jardineriajm.com.ar/img/logosvg/trebol.svg">
-  <meta property="og:image:secure_url" content="https://jardineriajm.com.ar/img/logosvg/trebol.svg">
+  <meta property="og:title" content="<?php echo $og_title; ?>">
+  <meta property="og:description" content="<?php echo $og_desc; ?>">
+  <meta property="og:url" content="<?php echo $og_url; ?>">
+  <meta property="og:image" content="<?php echo $og_image; ?>">
+  <meta property="og:image:secure_url" content="<?php echo $og_image; ?>">
   <meta property="og:site_name" content="JARDINERIA JM">
 
   <!-- Boostrap scripts -->
