@@ -17,6 +17,9 @@
     <!-- Banners ▦ -->
     <?php include_once 'componentes/banners-cards.php'; ?>
 
+    <!-- Promo Escuelas -->
+    <?php include_once 'componentes/promo-escuelas.php'; ?>
+
   </div>
 
   <!-- footer.php -->
