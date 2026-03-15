@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>JARDINERIA JM</title>
+  <title>JARDINERIA JM | JARDINERIA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- favicons -->
   <?php include_once "./componentes/favicon-files.php"; ?>
@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   
   <!-- styles css -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css?v=<?php echo versiontema(); ?>">
+  <meta name="google-site-verification" content="wCP-EzA6XdkUyPtFipE3TJvSWim5Iu8704QcHbZ_TQ0" />
 
   <meta name="msapplication-TileColor" content="#03e71f">
   <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">

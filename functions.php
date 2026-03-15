@@ -1,6 +1,10 @@
 <?php
 define("SITIO", "tester");
 
+function versiontema () {
+  return "1.0.0";
+}
+
 function whatsapp($num)
 {
     /*mobile*/

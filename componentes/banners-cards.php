@@ -56,7 +56,7 @@ function render_consulta_button($reason)
     </div>
     <div class="container mt-1">
         <div class="card premium-card">
-            <img src="./img/casa-jm.jpg" class="card-img-top" alt="...">
+            <img src="./img/jardin-jm-des45.png" class="card-img-top" alt="...">
             <div class="sello-trebol"></div>
             <div class="card-body card-back">
                 <p class="card-text txt-center">
@@ -138,7 +138,7 @@ function render_consulta_button($reason)
         <div class="col-4">
             <div class="mt-2 mb-2">
                 <div class="card container p-0 premium-card">
-                    <img src="./img/casa-jm.jpg" class="card-img-top" alt="...">
+                    <img src="./img/jardin-jm-des45.png" class="card-img-top" alt="...">
                     <div class="text-center" style="background-color: #0d3915e8;">
                         <div style="border: 2px #fff solid;"></div>
                         <img src="./img/trebol.png" style="height: 1rem;">
